@@ -1,0 +1,82 @@
+/* Events page — lemos portfolio style */
+
+.event-card {
+  border: 1px solid var(--bluish-gray);
+  border-radius: .5rem;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 .5rem 1rem rgba(15, 76, 117, .12);
+  transform: translateY(-2px);
+}
+
+/* Image placeholder — swap for <img class="event-img"> once real photos exist */
+.event-img-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .35rem;
+  width: 100%;
+  height: 110px;
+  border-radius: .4rem;
+  background: linear-gradient(135deg, var(--bluish-gray), var(--light-gray));
+  color: var(--blue-dark);
+}
+
+.event-img-placeholder i {
+  font-size: 1.6rem;
+  opacity: .7;
+}
+
+.event-img-placeholder span {
+  font-size: .72rem;
+  opacity: .8;
+}
+
+.event-img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: .4rem;
+}
+
+/* Event type badges */
+.event-badge {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 600;
+  padding: .15rem .55rem;
+  border-radius: 999px;
+  margin-right: .4rem;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.badge-academic {
+  background: var(--blue-medium);
+}
+
+.badge-award {
+  background: var(--blue-dark);
+}
+
+.badge-milestone {
+  background: var(--gray-black);
+}
+
+.badge-professional {
+  background: var(--darker-b);
+}
+
+.event-link {
+  color: var(--blue-medium);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.event-link:hover {
+  color: var(--blue-dark);
+  text-decoration: underline;
+}
